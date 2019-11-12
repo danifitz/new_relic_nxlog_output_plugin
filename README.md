@@ -1,5 +1,9 @@
 # New Relic NXLog output plugin
 
+## Disclaimer
+*IMPORTANT*: This plugin is not officially supported by New Relic and
+is offered as-is.
+
 ## Limitations
 *IMPORTANT*: This plugin does nothing to parse logs. Logs must be sent
 in a JSON format conforming to the below structure
