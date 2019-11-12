@@ -19,6 +19,7 @@ import (
 // TODO: Check Logs buffer size - API will reject payloads over 1MB
 // TODO: Write to a log file for INFO and DEBUG messages
 // TODO: Implement gzip compression on JSON
+// TODO: Configurable buffer and flushMillis via command line args
 
 func init() {
 	// setup logging
@@ -26,7 +27,7 @@ func init() {
 }
 
 // how many logs will we hold in the buffer before transmitting?
-const bufferSize = 1
+const bufferSize = 256
 
 // how long in ms before we transmit the logs if the buffer doesn't fill up first
 const flushMillis = 2000
