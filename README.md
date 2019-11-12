@@ -11,7 +11,8 @@ https://nxlog.co/documentation/nxlog-user-guide/om_exec.html
 <Output someprog>
     Module  om_exec
     Command /path/to/binary
-    Arg     -
+    Arg     --NEW_RELIC_LICENSE_KEY <YOUR_KEY>
+    Arg     --NEW_RELIC_LOG_URI DEFAULTS_TO_https://log-api.newrelic.com/log/v1
 </Output>
 ```
 
