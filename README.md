@@ -1,5 +1,21 @@
 # New Relic NXLog output plugin
 
+## Limitations
+*IMPORTANT*: This plugin does nothing to parse logs. Logs must be sent
+in a JSON format conforming to the below structure
+```
+{
+    timestamp: "A TIMESTAMP",
+    message: "A STRING",
+    attributes: {
+        "attr1": "A STRING",
+        "attrN": "A STRING"
+    }
+}
+```
+This can be achieved using a combination of xm_json, xm_rewrite modules
+provided by NXLog.
+
 ## Usage
 Follow instructions in `Build` to create a binary.
 
